@@ -204,21 +204,34 @@ using namespace std;
 
 class BankAccount{
     public:
-    int credit, debit;
+    
     int opening_balance = 500;
+    
 
-    public:
+    BankAccount(): credit(0), debit(0){}
+
+
+    int credit, debit;
     BankAccount(const int& amountCredit, int amountDebit):
         credit(amountCredit), debit(amountDebit){}
 
-    int deposit(int credit){
-        int CreditedBal = opening_balance + credit;
+    int deposit(int amount){
+        int CreditedBal = opening_balance + amount;
         return CreditedBal;
     }
 
-    int Withdraw( int debit){
-        int DebitedBal = opening_balance - debit;
+    int Withdraw( int amount){
+
+        if(amount>opening_balance){
+            cout<<"Insufficient balance"<<'\n';
+            return opening_balance;
+        }
+        int DebitedBal = opening_balance - amount;
         return DebitedBal;
+    }
+
+    int getBalance() const {
+        return opening_balance;
     }
 
 
@@ -231,7 +244,12 @@ int main(){
 
     BankAccount user1;
 
-    user1.credit = 200;
+    // // user1.credit = 200;
+
+    cout<<"Credited Balance: "<<user1.deposit(200)<<'\n';
+    cout<<"Debited Balance: "<<user1.Withdraw(100)<<'\n';
+    cout<<"Current Balance: "<<user1.getBalance()<<'\n';
+    cout<<user1.getBalance()<<'\n';
 
 
     return 0;
