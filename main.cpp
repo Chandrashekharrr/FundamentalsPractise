@@ -259,18 +259,24 @@
 using namespace std;
 
 int main(){
-
+    int even = 0;
+    int odd = 0;
     double arr[] = {1,2,3,4,5,6,7,8,9,5,52,63,41,85,96,7,20,36,45,89,74,456,963,852,741};
 
     int size = sizeof(arr) / sizeof(arr[0]);    
 
-    for(int i=0; i<arr.size; i++){
-        if(arr[i] % 2==0){
-            cout<<"even"<<'\n';
+    for(int i=0; i<size; i++){
+        if(i % 2 == 0){
+            // cout<<"even number: "<<arr[i]<<'\n';
+            even++;
         }else{
-            cout<<"odd"<<'\n';
+            // cout<<"odd number: "<<arr[i]<<'\n';
+            odd++;
         }
     }
+
+    cout<<"even numbers: "<<even<<'\n';
+    cout<<"odd numbers: "<<odd<<'\n';
 
     return 0;
 }

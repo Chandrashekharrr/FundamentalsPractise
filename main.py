@@ -71,32 +71,44 @@
 # print(first.getCount())
 
 
-class BankAccount:
-    def __init__ (self, credit, debit):
-        self.credit = credit
-        self.debit = debit
+# class BankAccount:
+#     def __init__ (self, credit, debit):
+#         self.credit = credit
+#         self.debit = debit
 
-    opening_balance = 500
+#     opening_balance = 500
 
-    def deposit(self,amount):
-        self.opening_balance += amount
-        return self.opening_balance
+#     def deposit(self,amount):
+#         self.opening_balance += amount
+#         return self.opening_balance
 
-    def withdraw(self, amount):
-        if amount>self.opening_balance:
-            print("Insufficient Balance!")
+#     def withdraw(self, amount):
+#         if amount>self.opening_balance:
+#             print("Insufficient Balance!")
             
-        self.opening_balance -= amount
-        return self.opening_balance
+#         self.opening_balance -= amount
+#         return self.opening_balance
 
-    def getBal(self):
+#     def getBal(self):
 
-        return self.opening_balance
+#         return self.opening_balance
 
 
-user = BankAccount(0,0)
+# user = BankAccount(0,0)
 
-print(user.deposit(200))
-print(user.withdraw(800))
-print(user.getBal())
+# print(user.deposit(200))
+# print(user.withdraw(800))
+# print(user.getBal())
 
+arr = [1,2,3,4,5,6,7,8,9,10]
+even = 0
+odd = 0
+
+for i in range(len(arr)):
+    if i % 2 == 0:
+        even += 1
+    else:
+        odd += 1
+
+print(f"even numbers: {even}")
+print(f"odd numbers: {odd}")
