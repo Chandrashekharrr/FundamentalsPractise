@@ -198,58 +198,83 @@
 // }
 
 
+// #include<iostream>
+// using namespace std;
+
+// class BankAccount{
+//     public:
+    
+//     int opening_balance = 500;
+    
+
+//     BankAccount(): credit(0), debit(0){}
+
+
+//     int credit, debit;
+//     BankAccount(const int& amountCredit, int amountDebit):
+//         credit(amountCredit), debit(amountDebit){}
+
+//     int deposit(int amount){
+//         int CreditedBal = opening_balance + amount;
+//         return CreditedBal;
+//     }
+
+//     int Withdraw( int amount){
+
+//         if(amount>opening_balance){
+//             cout<<"Insufficient balance"<<'\n';
+//             return opening_balance;
+//         }
+//         int DebitedBal = opening_balance - amount;
+//         return DebitedBal;
+//     }
+
+//     int getBalance() const {
+//         return opening_balance;
+//     }
+
+
+// };
+
+
+
+// int main(){
+
+
+//     BankAccount user1;
+
+//     // // user1.credit = 200;
+
+//     cout<<"Credited Balance: "<<user1.deposit(200)<<'\n';
+//     cout<<"Debited Balance: "<<user1.Withdraw(100)<<'\n';
+//     cout<<"Current Balance: "<<user1.getBalance()<<'\n';
+//     cout<<user1.getBalance()<<'\n';
+
+
+//     return 0;
+// }
+
+
 #include<iostream>
 using namespace std;
 
-class BankAccount{
-    public:
-    
-    int opening_balance = 500;
-    
-
-    BankAccount(): credit(0), debit(0){}
-
-
-    int credit, debit;
-    BankAccount(const int& amountCredit, int amountDebit):
-        credit(amountCredit), debit(amountDebit){}
-
-    int deposit(int amount){
-        int CreditedBal = opening_balance + amount;
-        return CreditedBal;
-    }
-
-    int Withdraw( int amount){
-
-        if(amount>opening_balance){
-            cout<<"Insufficient balance"<<'\n';
-            return opening_balance;
-        }
-        int DebitedBal = opening_balance - amount;
-        return DebitedBal;
-    }
-
-    int getBalance() const {
-        return opening_balance;
-    }
-
-
-};
-
-
-
 int main(){
 
+    double arr[] = {1,2,3,4,5,6,7,8,9,5,52,63,41,85,96,7,20,36,45,89,74,456,963,852,741};
 
-    BankAccount user1;
+    int size = sizeof(arr) / sizeof(arr[0]);    
 
-    // // user1.credit = 200;
-
-    cout<<"Credited Balance: "<<user1.deposit(200)<<'\n';
-    cout<<"Debited Balance: "<<user1.Withdraw(100)<<'\n';
-    cout<<"Current Balance: "<<user1.getBalance()<<'\n';
-    cout<<user1.getBalance()<<'\n';
-
+    for(int i=0; i<arr.size; i++){
+        if(arr[i] % 2==0){
+            cout<<"even"<<'\n';
+        }else{
+            cout<<"odd"<<'\n';
+        }
+    }
 
     return 0;
 }
+
+
+
+

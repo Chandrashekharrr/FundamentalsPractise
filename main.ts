@@ -112,3 +112,47 @@
 // first.increment();
 
 // console.log(first.getCount());
+
+
+// class BankAccount{
+
+//     OpeningBalance:number = 500;
+
+//     credit:number = 0;
+//     debit:number = 0;
+
+//     constructor(credit?:number, debit?:number){
+//         this.credit = credit ?? 0;
+//         this.debit = debit ?? 0;
+//     }
+
+
+//     deposit(amount:number) {
+//         this.OpeningBalance += amount;
+//         return this.OpeningBalance;
+//     }
+
+//     withdraw(amount:number){
+//         if(amount > this.OpeningBalance){
+//             console.log('Insufficient Balance!');
+//         }
+
+//             this.OpeningBalance -= amount;
+
+//             return this.OpeningBalance;
+//     }
+
+
+//     getBalance(){
+
+//         return this.OpeningBalance
+//     }
+
+// }
+
+// const user1 = new BankAccount();
+
+// console.log(user1.deposit(200));
+// console.log(user1.withdraw(100));
+// console.log(user1.getBalance());
+
