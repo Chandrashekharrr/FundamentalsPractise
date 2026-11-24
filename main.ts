@@ -156,18 +156,36 @@
 // console.log(user1.withdraw(100));
 // console.log(user1.getBalance());
 
-let arr:number [] = [1,2,3,4,5,6,7,8,9,10];
-// let size = arr.length;
-let even =0;
-let odd =0;
+// let arr:number [] = [1,2,3,4,5,6,7,8,9,10];
+// // let size = arr.length;
+// let even =0;
+// let odd =0;
 
-for(let i=0; i<arr.length; i++){
-    if(i % 2 == 0){
-        even++;
-    }else{
-        odd++;
-    }
-}
+// for(let i=0; i<arr.length; i++){
+//     if(i % 2 == 0){
+//         even++;
+//     }else{
+//         odd++;
+//     }
+// }
 
-console.log(`even numbers: ${even}`);
-console.log(`odd numbers: ${odd}`);
+// console.log(`even numbers: ${even}`);
+// console.log(`odd numbers: ${odd}`);
+
+// let arr:number[] = [78,90,78];
+// let large:number = 0;
+
+// for(let i=0; i<arr.length;i++){
+//     if(arr[i] > large){
+//         large = arr[i];
+//     }
+// }
+
+// console.log(large);
+
+
+
+
+
+
+

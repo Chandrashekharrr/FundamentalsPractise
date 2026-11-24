@@ -100,15 +100,25 @@
 # print(user.withdraw(800))
 # print(user.getBal())
 
-arr = [1,2,3,4,5,6,7,8,9,10]
-even = 0
-odd = 0
+# arr = [1,2,3,4,5,6,7,8,9,10]
+# even = 0
+# odd = 0
 
-for i in range(len(arr)):
-    if i % 2 == 0:
-        even += 1
-    else:
-        odd += 1
+# for i in range(len(arr)):
+#     if i % 2 == 0:
+#         even += 1
+#     else:
+#         odd += 1
 
-print(f"even numbers: {even}")
-print(f"odd numbers: {odd}")
+# print(f"even numbers: {even}")
+# print(f"odd numbers: {odd}")
+
+# arr = [89,90,78]
+# large = 0 # large = arr[0]  we use this for negative numbers
+# for el in arr:
+#     if el > large:
+#         large = el
+
+# print(large)
+
+
